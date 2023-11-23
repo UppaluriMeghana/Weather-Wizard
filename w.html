@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Wizard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="w.css">
+</head>
+<body>
+    <div id="card">
+        <div id="search">
+            <input type="text" placeholder="city name"
+            spellcheck="false">
+            <button><i class="ri-search-line"></i></button>
+        </div>
+        <div id="error">
+            <p>Invalid city name</p>
+        </div>
+        <div id="weather">
+            <img src="./storm.png" class="weather-icon" >
+            <h1 id="temp">22°c</h1>
+            <h2 id="city">Hyderabad</h2>
+            <div id="details">
+                <div id="col1">
+                    <img src="./water-percent-line.png" alt="" >
+                    <div id="col11">
+                        <p id="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div id="col2">
+                    <img src="./windy-fill.png" alt="" >
+                    <div id="col12">
+                        <p id="wind">15 km/h</p>
+                        <p>Wind</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="w.js"></script>
+
+</body>
+</html>
